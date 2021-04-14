@@ -1,0 +1,10 @@
+.csv-page {text-align: center;padding: 50px;display: flex;justify-content: center;align-items: center;}
+
+.csv-page button {
+    margin: 66px 16px;
+    padding: 10px;
+}
+.csv-btn {
+  width: 450px;
+  margin: 100px auto;
+}

@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import ContactUs from "./client";
+import AdminDashboard from "./admin/index";
+import Login from "./admin/login";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Switch>
+          <Route exact path="/" component={ContactUs} />
+          <Route exact path="/admin/login" component={Login} />
+          <Route exact path="/admin/dashboard" component={AdminDashboard} />
+        </Switch>
+      </Router>
     </div>
   );
 }
