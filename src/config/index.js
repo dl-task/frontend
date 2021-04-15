@@ -1,1 +1,1 @@
-export const serverUrl = 'http://localhost:8080/api';
+export const serverUrl = 'https://drive-lah-task.herokuapp.com/api';
